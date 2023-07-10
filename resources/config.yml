@@ -10,7 +10,7 @@ max-coin: 999999999999
 allow-pay-offline: true
 
 # default-lang: Set default language
-default-lang: vie
+default-lang: en
 # auto-save-interval: Set interval of auto-save
 auto-save-interval: 10
 

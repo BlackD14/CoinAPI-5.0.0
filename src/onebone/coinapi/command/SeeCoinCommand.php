@@ -29,7 +29,7 @@ class SeeCoinCommand extends Command{
         }
 
         $player = array_shift($params);
-        if(trim($player) === ""){
+        if($player === null || trim($player) === ""){
             $sender->sendMessage(TextFormat::RED . "Usage: " . $this->getUsage());
             return true;
         }

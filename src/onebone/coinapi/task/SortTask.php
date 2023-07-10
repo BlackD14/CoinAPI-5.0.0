@@ -35,13 +35,13 @@ class SortTask extends AsyncTask{
 
     /**
      * @param string            $player
-     * @param array                $pointData
+     * @param string                $coinData
      * @param bool                $addOp
      * @param int                $page
-     * @param array                $ops
-     * @param array                $banList
+     * @param string                $ops
+     * @param string                $banList
      */
-    public function __construct(string $sender, array $coinData, bool $addOp, int $page, array $ops, array $banList){
+    public function __construct(string $sender, string $coinData, bool $addOp, int $page, string $ops, string $banList){
         $this->sender = $sender;
         $this->coinData = $coinData;
         $this->addOp = $addOp;
@@ -55,9 +55,9 @@ class SortTask extends AsyncTask{
     }
 
     private function getTopList(){
-        $topcoin = (array)$this->coinData;
-        $banList = (array)$this->banList;
-        $ops = (array)$this->ops;
+        $topcoin = (array)unserialize($this->coinData);
+        $banList = (array)unserialize($this->banList);
+        $ops = (array)unserialize($this->ops);
         arsort($topcoin);
 
         $ret = [];

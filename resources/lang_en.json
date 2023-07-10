@@ -1,0 +1,67 @@
+{
+    "language": "en",
+    "commands": {
+        "mycoin": {
+            "usage": "/mycoin",
+            "description": "See your Coins"
+        },
+        "topcoin": {
+            "usage": "/topcoin [page]",
+            "description": "See the server's top Coins"
+        },
+        "setcoin": {
+            "usage": "/setcoin <player> <amount>",
+            "description": "Adjust the number of Coins for player"
+        },
+        "seecoin": {
+            "usage": "/seecoin <player>",
+            "description": "See other players' Coins"
+        },
+        "givecoin": {
+            "usage": "/givecoin <player> <amount>",
+            "description": "Give Coin to player"
+        },
+        "takecoin": {
+            "usage": "/takecoin <player> <amount>",
+            "description": "Get Player's Coin"
+        },
+        "paycoin": {
+            "usage": "/paycoin <player> <amount>",
+            "description": "Give Coins to other player"
+        },
+        "setlangcoin": {
+            "usage": "/setlangcoin <language>",
+            "description": "Set language for this Plugin"
+        },
+        "mystatuscoin": {
+            "usage": "/mystatuscoin",
+            "description": "See the status of your Coins"
+        }
+    },
+    "language-set": "§l§b Selected as language",
+    "request-cancelled": "§l§aYour request has been cancelled",
+    "player-not-connected": "§a§lPlayer named §e%1 is currently not online",
+    "player-never-connected": "§l§aPlayer named §e%1 was not found in the server",
+    "topcoin-tag": "§l§6❖§a TOP Coin §bPage §e%1§f/§c%2§d ❄",
+    "topcoin-format": "§l§b[§l§e%1§ ]§a %2§c ↣§e %3§d Coin",
+    "pay-failed": "§l§aYou don't have enough Coins to transfer",
+    "pay-success": "§l§aYou have transferred %1 Coin to %2",
+    "coin-paid": "§l§aPlayer %1 sent you %2 Coin",
+    "takecoin-must-be-number": "§l§aQuantity must be number",
+    "takecoin-invalid-number": "§l§aInvalid number",
+    "takecoin-player-lack-of-coin": "§l§e%1§a not enough §e%MONETARY_UNIT%%2 %1§a Coin:§e %MONETARY_UNIT%%3",
+    "takecoin-coin-taken": "§l§aYour coin has been confiscated: %1 Coin",
+    "takecoin-took-coin": "§l§a%2 Coin of player %1 confiscated",
+    "takecoin-failed": "§l§aYou cannot take Coins from this player",
+    "givecoin-must-be-number": "§l§aCoin number must be number",
+    "givecoin-invalid-number": "§l§aError",
+    "givecoin-coin-given": "§l§aYou have received: %1 §eCoin",
+    "givecoin-gave-coin": "§l§aGive %1 Coin to player %2",
+    "seecoin-seecoin": "§l§aPlayer %1 currently has: %2 §eCoin",
+    "setcoin-setcoin": "§l§aPlayer %1's Coin has been adjusted to %2 §eCoin",
+    "setcoin-set": "§l§aYour coin has been reset to: %1 §eCoin",
+    "setcoin-failed": "§l§aCould not place Coin due to unknown error",
+    "setcoin-invalid-number": "§l§a %MONETARY_UNIT%%1 §cMust be a number",
+    "mycoin-mycoin": "§l§aYour Coin: %1 Coin",
+    "mystatus-show": "§l§aYour Coin Status: %1%"
+}

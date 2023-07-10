@@ -2,7 +2,7 @@
 name: CoinAPI
 main: onebone\coinapi\CoinAPI
 api:
-- 4.0.0
+- 5.0.0
 version: 3.0.1
 author: onebone , BeeAZZ
 permissions:

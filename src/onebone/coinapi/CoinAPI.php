@@ -82,10 +82,10 @@ class CoinAPI extends PluginBase implements Listener{
         if($lang === false){
         }
         $command = strtolower($command);
-        if(isset($this->lang["vie"]["commands"][$command])){
-            return $this->lang["vie"]["commands"][$command];
+        if(isset($this->lang["en"]["commands"][$command])){
+            return $this->lang["en"]["commands"][$command];
         }else{
-            return $this->lang["vie"]["commands"][$command];
+            return $this->lang["en"]["commands"][$command];
         }
     }
 
@@ -100,8 +100,8 @@ class CoinAPI extends PluginBase implements Listener{
         $player = strtolower($player);
         if(isset($this->lang[$this->playerLang[$player]][$key])){
             return $this->replaceParameters($this->lang[$this->playerLang[$player]][$key], $params);
-        }elseif(isset($this->lang["vie"][$key])){
-            return $this->replaceParameters($this->lang["vie"][$key], $params);
+        }elseif(isset($this->lang["en"][$key])){
+            return $this->replaceParameters($this->lang["en"][$key], $params);
         }
         return "Language matching key \"$key\" does not exist.";
     }
@@ -435,6 +435,6 @@ class CoinAPI extends PluginBase implements Listener{
                 $this->lang[substr($filename, 5, -5)] = json_decode(file_get_contents($resource->getPathname()), true);
             }
         }
-        $this->lang["user-define"] = (new Config($this->getDataFolder()."messages.yml", Config::YAML, $this->lang["vie"]))->getAll();
+        $this->lang["user-define"] = (new Config($this->getDataFolder()."messages.yml", Config::YAML, $this->lang["en"]))->getAll();
     }
 }
